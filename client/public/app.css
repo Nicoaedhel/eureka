@@ -1,0 +1,171 @@
+body{
+	
+	font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+	font-size: 17px;
+	color:rgba(44, 62, 80,1.0);
+	letter-spacing: 0.5px;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a{
+	color:rgba(52, 152, 219,1.0);
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover{
+	color:rgba(41, 128, 185,1.0);
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+p{
+	text-align: justify;
+}
+
+input[type="checkbox"], input[type="email"], input[type="password"], input[type="radio"], input[type="search"], input[type="text"], input[type="number"], input[type="tel"], input[type="url"], textarea, select {
+    border: 1px solid rgba(34,36,38,.15);
+    font-size: 17px;
+    padding: 1em;
+    color: #444444;
+    border-radius: 2px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    outline: 0;
+}
+
+input[type="checkbox"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="radio"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="url"]:focus, textarea:focus, select:focus {
+    border-color: rgba(52, 152, 219,1.0);
+}
+
+h1 {
+	color: rgba(52, 73, 94,1.0);
+    font-size: 1.9em;
+}
+
+h2{
+	color: rgba(52, 73, 94,1.0);
+}
+
+.container{
+	display: flex; /* or inline-flex */
+	flex-flow: row;
+	justify-content: center;
+}
+
+.item{
+	margin: 0 1em;
+}
+
+.content{
+	max-width: 600px;
+}
+
+.menu{
+	max-width: 300px;
+}
+
+.button{
+	background-color: rgba(52, 152, 219,1.0); 
+    border: none;
+    color: white;
+    padding: 1.05em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 2px;
+    font-weight: bolder;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover{
+	color:white;
+	background: rgba(41, 128, 185,1.0);
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+	
+}
+
+.button.success{
+	background-color: rgba(46, 204, 113,1.0);
+}
+
+.button.success:hover{
+	background-color: rgba(39, 174, 96,1.0);
+
+}
+
+.button.error{
+	background-color: rgba(231, 76, 60,1.0); 
+}
+
+.button.error:hover{
+	background-color: rgba(192, 57, 43,1.0);
+}
+
+.button.info{
+	background-color: rgba(241, 196, 15,1.0); 
+}
+
+.button.info:hover{
+	background-color: rgba(243, 156, 18,1.0);
+}
+
+.button.space{
+	margin-right:1em;
+	margin-bottom: 1em;
+}
+
+.extend{
+	width:90%;
+}
+
+.segment {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: .28571429rem;
+    border: 1px solid rgba(34,36,38,.15);
+}
+
+.fusion-right{
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+.fusion-left{
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
