@@ -4,8 +4,9 @@ var jade = require('jade'),
 
 app.use('/static', express.static('public'));
  
+
 app.get('/', function (req, res) {
-  jade.renderFile('templates/index.jade', {text:"texte"}, function (err, html) {
+  jade.renderFile('templates/chat.jade', {text:"texte"}, function (err, html) {
     if (err) throw err;
     res.end(html)
   });
