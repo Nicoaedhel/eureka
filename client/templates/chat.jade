@@ -5,7 +5,32 @@ block title
 	title Chat
 
 block content
-	ul#messages
-	form
-		input#m(autocomplete='off')
-		button send
+	.panel-start
+		.panel-window
+			.panel-content
+				h1 Chat Square
+				br
+				form.insert-connect
+					input(type='text', placeholder="Your username", autofocus="1" name="username").extend
+					br
+					br
+					input(type='email', placeholder="Your mail" name="mail").extend
+					br
+					br
+					a#connect(class='button success', href='#').extend Go !
+
+				
+	.item.menu.removed
+			h1 Chat Square
+			br
+			br
+			h4 Channels 
+			ul
+				li #General
+			br
+			h4 Users 
+			ul#users 
+	.item.content.removed
+		ul#messages
+		form.insert-text 
+			input#m(type='text', autocomplete='off', autofocus="1").extend
