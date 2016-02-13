@@ -11,7 +11,7 @@ block content
 				h1 Chat Square
 				br
 				form.insert-connect
-					input(type='text', placeholder="Your username", autofocus="1" name="username").extend
+					input(type='text', placeholder="Your username", autofocus="1", autocomplete='off', name="username").extend
 					br
 					br
 					input(type='email', placeholder="Your mail" name="mail").extend
@@ -33,4 +33,4 @@ block content
 	.item.content.removed
 		ul#messages
 		form.insert-text 
-			input#m(type='text', autocomplete='off', autofocus="1").extend
+			input#m(type='text', autocomplete='off').extend
