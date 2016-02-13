@@ -3,7 +3,7 @@ body{ min-height: 100vh; display: flex;}
 form{ display: flex; flex-direction: column;}
 #panel-start{ display: flex; flex: 1;}
 #panel-window-min{ margin: auto; display: flex; flex-direction: column; width: 300px;}
-#menu{ width: 220px;}
+#menu{ width: 180px;}
 #content{ display: flex; flex-direction:column; flex:1;}
 #insert-text { margin-top: auto; margin-bottom: 0em;}
 
@@ -18,7 +18,7 @@ input{ border: 2px solid rgba(189, 195, 199,0.5); border-radius: 6px; padding : 
 input:focus{ border-color: rgba(189, 195, 199,1.0);}
 button{ background: rgba(46, 204, 113,1.0); border: none; color: #fff; border-radius: 3px; padding: 0.7em; font-size: 20px;}
 button:hover{ background: rgba(39, 174, 96,1.0);}
-h1{ color: #4A4A4A;}
+h1{ color: #4A4A4A; margin-top: 0;}
 #menu{ background-color: rgba(46, 204, 113,1.0); padding-left: 1em; padding-right: 1em;}
 #menu h2, h4{ color: #fff; margin-top: 0.5em; margin-bottom: 0.5em;}
 #menu h4{ font-weight: 500; color: rgba(255, 255, 255, 0.8); text-transform: uppercase;}
