@@ -17,16 +17,17 @@ io.on('connection', function(socket){
 	// Connected / Disconnect
 	socket.on('chat connect', function(user){
 		me = user;
+		me.username = me.username.toLowerCase();
 		me.avatar = gravatar.url(me.mail, {s: '20', r: 'x', d: 'retro'}, true);
 		users.push(me);
 		socket.emit('chat connect');
-		io.emit('chat message', 'ChatSquare : hello '+me.username+' !');
+		io.emit('chat message', 'squarebot : Hi @'+me.username+' !');
 		io.emit('chat users', users);
 	});
 
 	socket.on('disconnect', function () {
 		if(me){
-			io.emit('chat message', 'ChatSquare : Bye '+me.username+' !');
+			io.emit('chat message', 'squarebot : Bye @'+me.username+' !');
 			var index = users.indexOf(me);
 			if (index > -1) {
 				users.splice(index, 1);

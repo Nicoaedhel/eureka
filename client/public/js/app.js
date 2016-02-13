@@ -4,7 +4,7 @@ var socket = io.connect('http://localhost:8000');
 $('#connect').click(function(event){
 	event.preventDefault();
 	socket.emit('chat connect', {
-		username : '@'+$('form.insert-connect').find('[name="username"]').val(),
+		username : $('form.insert-connect').find('[name="username"]').val(),
 		mail : $('form.insert-connect').find('[name="mail"]').val()
 	});
 	return false;
@@ -22,7 +22,7 @@ socket.on('chat connect', function(user){
 socket.on('chat users', function(users){
 	$('#users').empty();
 	for (user in users) {
-		$('#users').append($('<li>').text(users[user].username));
+		$('#users').append($('<li>').text('@ '+users[user].username));
 	};
 	
 });
