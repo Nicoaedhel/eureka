@@ -14,7 +14,7 @@ io.on('connection', function(socket){
 	
 	var me;
 
-	// Connected / Disconect
+	// Connected / Disconnect
 	socket.on('chat connect', function(user){
 		me = user;
 		me.avatar = gravatar.url(me.mail, {s: '20', r: 'x', d: 'retro'}, true);
@@ -24,10 +24,24 @@ io.on('connection', function(socket){
 		io.emit('chat users', users);
 	});
 
+	socket.on('disconnect', function () {
+		if(me){
+			io.emit('chat message', 'ChatSquare : Bye '+me.username+' !');
+			var index = users.indexOf(me);
+			if (index > -1) {
+				users.splice(index, 1);
+			}
+			io.emit('chat users', users);
+		}
+		
+	});
+
 
 	// Post msg
 	socket.on('chat message', function(msg){
 		io.emit('chat message', me.username +' : '+msg);
 	});
+
+	
 
 });
