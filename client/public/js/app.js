@@ -12,17 +12,11 @@ $('#connect').click(function(event){
 
 // If connect
 socket.on('chat connect', function(user){
-	$('.panel-start').addClass('removed');
-	$('.menu').removeClass('removed');
-	$('.content').removeClass('removed');
+	$('#panel-start').addClass('removed');
+	$('#menu').removeClass('removed');
+	$('#content').removeClass('removed');
 	$('#m').focus();
 });
-
-
-
-
-
-
 
 // Add users
 socket.on('chat users', function(users){
@@ -33,14 +27,8 @@ socket.on('chat users', function(users){
 	
 });
 
-
-
-
-
-
-
 // msg to server
-$('form.insert-text').submit(function(event){
+$('form#insert-text').submit(function(event){
 	event.preventDefault();
 	socket.emit('chat message',$('#m').val());
 	$('#m').val('');

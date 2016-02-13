@@ -5,29 +5,27 @@ block title
 	title Chat
 
 block content
-	.panel-start
-		.panel-window
-			.panel-content
+	#panel-start
+		#panel-window-min
+			#panel-content
 				h1 Chat Square
 				br
 				form.insert-connect
-					input(type='text', placeholder="Your username", autofocus="1", autocomplete='off', name="username").extend
+					input(type='text', placeholder="Your username", autofocus="1", autocomplete='off', name="username")
 					br
 					br
-					input(type='email', placeholder="Your mail" name="mail").extend
+					input(type='email', placeholder="Your mail" name="mail")
 					br
 					br
-					a#connect(class='button success', href='#').extend Go !
-
-				
-	.item.menu.removed
+					a#connect Go !			
+	#menu.removed
 			h1 Chat Square
-			h4 Channels 
+			h2 Channels 
 			ul
 				li #General
-			h4 Users 
+			h2 Users 
 			ul#users 
-	.item.content.removed
+	#content.removed
 		ul#messages
-		form.insert-text 
-			input#m(type='text', autocomplete='off').extend
+		form#insert-text 
+			input#m(type='text', autocomplete='off')
