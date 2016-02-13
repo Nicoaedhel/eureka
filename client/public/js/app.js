@@ -28,7 +28,6 @@ socket.on('chat connect', function(user){
 socket.on('chat users', function(users){
 	$('#users').empty();
 	for (user in users) {
-		$('#users').append('<img src="'+users[user].avatar+'" class="avatar"/>');
 		$('#users').append($('<li>').text(users[user].username));
 	};
 	
